@@ -1,62 +1,114 @@
-body{
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    background-color: yellowgreen;
 }
-/* header section */
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 .header{
-    display: flex;
-    align-items: center;
+    background-color: #C30F45;
+    font-family: sans-serif;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    align-content: center;
 }
-span{
-    color: red;
+h1{
+    margin-left: 5px;
+}
+.page{
+    color: aqua;
 }
 
 .navbar ul{
+    margin-right: 50px;
     display: flex;
-    list-style: none;
+    justify-content: end;
+    gap: 50px;
     position: relative;
-    left: 600px;
-    gap: 40px;
+    bottom: 20px;
+    list-style: none;
 }
 .navbar ul li a{
-    background-color: gainsboro;
-    font-size: larger;
-    border-radius: 5px;
+    font-size: 20px;
     text-decoration: none;
-    color: black;
+    color: white;
+}
+a:hover{
+    border-radius: 5px;
+    box-shadow: 2px 3px 4px 5px white;
 }
 
 /* home section */
 .home{
     height: 100vh;
     width: 100%;
-    background-color: black;
+    background-color: #61E786;
 }
-.div1{
-    color: aqua;
+
+.home-containt{
+    position: absolute;
+    left: 100px;
+    top: 100px;
 }
-.div1 h2{
-    color: white;
+
+/* .home-intro{
+    color: blueviolet;
+    animation: slide 10s linear 5s infinite alternate;
+} */
+.heading-two{
+animation: myLoader 5s ease-out infinite;
 }
-.home-div2{
-    color: blue;
-    padding: 10px;
+
+@keyframes myLoader{
+    0%, 100%{
+        transform: translatex(0);
+    }
+    50%{
+        transform: translatex(-50px);
+        transform: translatex(-35);
+    }
+}
+
+.home-product{
+    color: #C30F45;
+}
+
+
+.home-search{
+    color: #CDFFFC; 
+    position: relative;
+    left: 450px;
+    top: 250px;
+}
+.leble-search{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.seaech-but{
+    margin-top: 10px;
+    margin-left: 40px;
 }
 
 /* about section */
 .about{
     height: 100vh;
     width: 100%;
+    background-color: #d9dd92;
 }
-.about-div3{
-    color: white;
+.about-intro{
+    color: #C30F45;
 }
 .about-div4{
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
+}
+.more-info{
+    background-color: black;
+    color: white;
 }
 
 /* service section */
@@ -72,8 +124,25 @@ span{
 }
 .item{
     background-color: blue;
-    border-radius: 20px;
+
 }
+.product-name{
+    font-size: 36px;
+}
+.product-intro{
+    color: aliceblue;
+    font-size: 20px;
+}
+.product-price{
+    font-style: italic;
+    color: black;
+}
+.product-button2{
+    margin-left: 5px;
+    background-color: black;
+    color: white;
+}
+
 
 /* contact section */
 .contact{
